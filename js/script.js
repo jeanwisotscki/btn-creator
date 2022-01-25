@@ -38,7 +38,16 @@ const handleStyle = {
 function handleChange(event) {
   const name = event.target.name;
   const value = event.target.value;
-  console.log(value);
 
   handleStyle[name](value);
+  showCss();
+}
+
+function showCss() {
+  const cursor = "<span>cursor: pointer;</span>";
+
+  cssText.innerHTML =
+    "<span>" + btn.style.cssText.split("; ").join(";</span><span>");
+
+  cssText.innerHTML += cursor;
 }
