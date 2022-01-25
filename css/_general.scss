@@ -28,7 +28,7 @@ section#button-creator {
     border-radius: 5px;
     padding: 15px;
 
-    form {
+    #form-controls {
       label:first-child {
         margin-top: -5px;
       }
@@ -60,5 +60,23 @@ section#button-creator {
     background-color: #eee;
     border-radius: 5px;
     padding: 15px;
+
+    .css {
+      font-family: monospace;
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .btn {
+      cursor: pointer;
+    }
   }
 }
