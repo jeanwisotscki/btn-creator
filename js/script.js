@@ -40,6 +40,7 @@ function handleChange(event) {
   const value = event.target.value;
 
   handleStyle[name](value);
+  saveValues(name, value);
   showCss();
 }
 
@@ -51,3 +52,18 @@ function showCss() {
 
   cssText.innerHTML += cursor;
 }
+
+function saveValues(name, value) {
+  localStorage[name] = value;
+}
+
+function setValues() {
+  const properties = Object.keys(localStorage);
+
+  properties.forEach((propertie) => {
+    handleStyle[propertie](localStorage[propertie]);
+    controls.elements[propertie].value = localStorage[propertie];
+  });
+  showCss();
+}
+setValues();
