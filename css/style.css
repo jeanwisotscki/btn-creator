@@ -71,7 +71,7 @@ section#button-creator #inp-container #form-controls #fontFamily {
 section#button-creator #result-container {
   background-color: #eee;
   border-radius: 5px;
-  padding: 15px;
+  padding: 50px;
 }
 
 section#button-creator #result-container .css {
