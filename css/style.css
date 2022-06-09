@@ -1,19 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #0c0c0c;
-  background-color: #6814b6;
+  background-color: var(--color1);
   padding: 20px;
 }
 
 body h1 {
-  color: #fff;
+  color: var(--color3);
   margin: 10px;
   text-align: center;
 }
@@ -27,12 +20,12 @@ section#button-creator {
       grid-template-columns: 250px 1fr;
   margin: 0px auto;
   padding: 30px;
-  background-color: blueviolet;
+  background-color: var(--color2);
   border-radius: 10px;
 }
 
 section#button-creator #inp-container {
-  background-color: #6814b6;
+  background-color: #cd1;
   color: white;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -95,5 +88,17 @@ section#button-creator #result-container .css span {
 
 section#button-creator #result-container .btn {
   cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  --color1: #0c1829;
+  --color2: #132742;
+  --color3: #e2dfdd;
+  --color4: #0294a5;
+  --color5: #c1403d;
 }
 /*# sourceMappingURL=style.css.map */
